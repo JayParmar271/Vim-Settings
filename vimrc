@@ -58,6 +58,7 @@ nmap <D-e> :CtrlPMRUFiles<cr>
 "Make it easy to edit vimrc file.
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 nmap <Leader>es :e ~/.vim/snippets/php.snippets<cr>
+nmap <Leader>eus :UltiSnipsEdit<cr>
 nmap <Leader>ep :e ~/.vim/plugins.vim<cr>
 
 "Add simple heighlight removal.
