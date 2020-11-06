@@ -16,7 +16,12 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 
-let @a="yiw/}O$this->pi€kr = $pi€kr;?__constOprotected $pa;/__construct/\", "  
+let @a="yiw/}
+O$this->piÂ€kr = $piÂ€kr;?__const
+Oprotected $pa;
+/__construct
+/\"
+, "  
 
 "----------------Visuals---------------"
 colorscheme atom-dark
@@ -149,11 +154,27 @@ nmap <Leader><Leader>v :e resources/views/<cr>
 
 " Notes and Tips
 "
-"----------------Modes---------------"
+" CtrlPBufTag not working, Need to install brew install ctags
+" Use ctags -R : Add directory for searching - Call from webhook 'ctags -R' for each commit
+" ctags -R --exclude=node_modules|vendor
+"
+"
+"----------------Modes & Copy Paste---------------"
 " i - Insert mode
 " v - Visual mode
 " V - Visual mode select whole line
-"
+" yy - To Copy
+" p - Paste
+" c - Cut
+" yiw - copy inner word
+" yyp - yank the line
+" . - Repeat last operation
+" O - Go to up line + Insert mode
+" o - Go to down side + Insert mode
+" vat - visual select tag <style> </style> tag
+" dat - delete tag
+" dd - delete line
+
 "---------------File Traversal----------------"
 " j - Go down
 " k - Go up
@@ -164,10 +185,44 @@ nmap <Leader><Leader>v :e resources/views/<cr>
 " gg - Go to top of the file
 " G - Go to down of the file
 " zz - Center content of the file
-"
-" 
-"
+" cmd + 1 - Open left menu
+" Use '-' Traverse in project
+" d - Create new directory
+" D - Delete directory or file
+" % - Create new file
+" ctrl + p = Search file in project
+" ctrl + r = Search function in file
+
 " - Press 'zz' to instantly center the line where the cursor is located. 
+
+
+"---------------Tabs----------------"
+" tabe - To open new tab
+" tabc - Close tab
+
+
+"---------------Surronding----------------"
+" di - di( = Delete inside (
+" di - di{ = Delete inside {
+" ci - ci( = Change inside (
+" vi - vi{ = Select inside {
+" va - va{ = Select with {
+
+"---------------Split----------------"
+" :vsp - Vertical split
+" :sp - Horizontal split
+" control + w + j - Go down
+" control + w + k - Go up
+" control + w + w - Toggle
+
+"---------------Buffer----------------"
+" :bd - Buffer delete
+" :bp - Go to previous location
+
+" To run shell script command use !: !pwd , !ls
+
+" Download theme for vim:
+" https://github.com/gosukiwi/vim-atom-dark/blob/master/colors/atom-dark.vim
 
 " Plugin Install
 " 1. Open this file ~/.vim/plugins.vim
