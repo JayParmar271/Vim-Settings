@@ -192,6 +192,23 @@ nmap <Leader><Leader>v :e resources/views/<cr>
 " % - Create new file
 " ctrl + p = Search file in project
 " ctrl + r = Search function in file
+" ,f - Search method in project (:tag)
+" :tn - Next method if same method in multiple files
+" :tp - Search in previous file
+" :ts - select all tags
+" ctrl + ] = Go to inside method: ProjectController.php -> $project->isCreated();
+" ctrl + 6 = Go back
+" :Ag 'keywords' = Search in all files - Traverse using J,K
+
+
+"---------------Greplace----------------"
+" 1. :GSearch 
+" 2. Select content you want to change
+" 3. Use :s/Jay Patel/Jay Parmar
+" 4. Use :Greplace
+" 5. Select a
+" 6. Use :wa to write all files
+
 
 " - Press 'zz' to instantly center the line where the cursor is located. 
 
@@ -207,6 +224,10 @@ nmap <Leader><Leader>v :e resources/views/<cr>
 " ci - ci( = Change inside (
 " vi - vi{ = Select inside {
 " va - va{ = Select with {
+" cs ` " - Single quote to double quote
+" dst - <p>Test</p> - Delete surrounding tag
+" cst - <p>Test</p> to <span>Test</span> - change surrounding tag 
+" S - select and capital S to add new tag
 
 "---------------Split----------------"
 " :vsp - Vertical split
@@ -229,3 +250,25 @@ nmap <Leader><Leader>v :e resources/views/<cr>
 " 2. Add plugin : Save file
 " 3. Come back to ~/.vimrc : Save file
 " 4. Use 'PluginInstall' to install plugin
+
+"---------------Php optimization----------------"
+" ,pf - Formatting using php cs fixer
+" ,su - Select then use ',su' to sort namespace by length
+" ,n - To add namespace at top
+" ,nf - Add namespace with line
+
+
+"---------------Marks----------------"
+" Capital letter work - Around multiple files 
+" Create mark: m + use any alphabet
+" Go to mark: ‘ + use marked alphabet
+" Exact to mark position : ` + use marked alphabet
+" d’M - M is marked alphabet - c'M - Change - d'M - delete - v'M - Visual
+" When close and reopen vim - use ‘0 to go last location
+
+
+"---------------Macros----------------"
+" q + q -> Start recording with q register
+" q -> stop recording
+" @ + q -> Perform macro
+" :reg to get macro details
